@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match the Mares</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Match the Mares</h1>
+    <div class="nav-links">
+      <button id="homeBtn">Game</button>
+      <button id="instructionsBtn">Instructions</button>
+      <button id="aboutBtn">About the Authors</button>
+    </div>
+  </nav>
+
+  <div id="start-screen">
+    <p>Click Anywhere to Start</p>
+  </div>
+
+  <div id="game-section">
+    <div id="game-over-text" class="overlay-text">
+      <p>GAME OVER</p>
+      <span>Click to try again.</span>
+    </div>
+
+    <div id="victory-text" class="overlay-text">
+      <p>VICTORY!</p>
+      <span>Click to play again.</span>
+    </div>
+
+    <div class="game-info-container">
+      <div>Time: <span id="time-remaining">100</span></div>
+      <div>Flips: <span id="flips">0</span></div>
+    </div>
+
+    <div class="game-container" id="game-container"></div>
+  </div>
+
+  <div id="instructions-section" class="hidden">
+    <h2>How to Play</h2>
+    <p>Welcome to Match the Mares! Here’s how to play:</p>
+    <ul class="instructions-list">
+      <li>Click the screen to start the game.</li>
+      <li>Flip two cards at a time.</li>
+      <li>If the cards match, they stay face up.</li>
+      <li>If they don’t match, they flip back over.</li>
+      <li>Match all the cards before the time runs out.</li>
+      <li>Try to finish with the fewest flips possible!</li>
+    </ul>
+  </div>
+
+  <div id="about-section" class="hidden">
+    <h2>About the Authors</h2>
+    <img class="author-img" src="images/our_faces.png" alt="Authors">
+    <p>
+      We were inspired by memory matching games and, being huge fans of My Little Pony, we decided to create this fun, colorful game called <strong>Match the Mares</strong>!<br><br>
+      Our goal is to make a challenging yet enjoyable game for players of all ages.<br><br>
+      This game was developed by Keldy Lorae Patawaran, Kirsten Zoe Viray, and Sophia Mickey Rich Maquesias.
+    </p>
+    <h3>Tips & Tricks</h3>
+    <ul class="tips-list">
+      <li>Try to remember where each mare is to minimize flips.</li>
+      <li>Pair the cards quickly to save time!</li>
+      <li>Have fun and don’t worry if you lose, try again!</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
